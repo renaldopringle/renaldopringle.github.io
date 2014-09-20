@@ -1,0 +1,47 @@
+.containor {
+    display: table;
+    position: relative;
+    min-width: 306px;
+    max-width: 306px;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    cursor: pointer;
+}
+
+.row {
+    display: table-row;
+}
+
+.box {
+    display: table-cell;
+    /*position: absolute;*/
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: #9fe2ff;
+    border: 1px solid #000000;
+}
+
+.box:hover {
+    background-color: #82dcff;
+}
+
+.box div {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    margin: 7px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.clickx img {
+    height: inherit;
+    width: inherit;
+}
+
+.clicko img {
+    height: inherit;
+    width: inherit;
+}
