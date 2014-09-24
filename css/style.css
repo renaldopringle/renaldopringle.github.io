@@ -10,10 +10,10 @@ a {
     margin: 0px;
     width: 100%;
     background-color: #e5e5e5;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .content {
@@ -83,11 +83,11 @@ a {
     padding-top: 18.6px;
     padding-bottom: 19px;
     padding-right: 150px;
-    border-left: 3px solid transparent; 
-    -webkit-transition: .2s ease;
-    -moz-transition: .2s ease;
-    -o-transition: .2s ease;
-    transition: .2s ease;
+    border-left: 0px solid transparent; 
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .menu .links ul li a:hover {
@@ -186,7 +186,3 @@ article img {
     animation: fade 1s infinite;
 }
 
-
-
-
-////////////////////
