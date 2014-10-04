@@ -46,18 +46,27 @@ a {
 
 .menu .profile-pic div {
     position: absolute;
+    overflow: hidden;
     height: 0px;
     width: 250px;
     margin-top: 250px;
     background-color: #00AEEF;
     opacity: 0.7;
-    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease 0.4s;
+    -moz-transition: all 0.2s ease 0.4s;
+    -o-transition: all 0.2s ease 0.4s;
+    transition: all 0.2s ease 0.4s;
 }
 
 .menu .profile-pic:hover div {
     height: 120px;
     width: 250px;
     margin-top: 130px;
+}
+
+.menu .profile-pic div #summary {
+    color: #FFF;
+    font-family: sans-serif, helvetica;
 }
 
 .menu .links {
@@ -173,13 +182,40 @@ article img {
 
 }
 
+@-webkit-keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-moz-keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-o-keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
 @keyframes fade {
+    from {
+        opacity: 1;
+    }
     to {
         opacity: 0;
     }
 }
 
-#spinner {
+svg {
     -webkit-animation: fade 1s infinite;
     -moz-animation: fade 1s infinite;
     -o-animation: fade 1s infinite;
