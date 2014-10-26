@@ -50,12 +50,16 @@ a {
     height: 0px;
     width: 250px;
     margin-top: 250px;
-    background-color: #00AEEF;
-    opacity: 0.7;
-    -webkit-transition: all 0.2s ease 0.4s;
-    -moz-transition: all 0.2s ease 0.4s;
-    -o-transition: all 0.2s ease 0.4s;
-    transition: all 0.2s ease 0.4s;
+    background: -webkit-linear-gradient(rgb(0, 210, 255), rgb(58, 123, 213));
+    background: -moz-linear-gradient(rgb(0, 210, 255), rgb(58, 123, 213));
+    background: -ms-linear-gradient(rgb(0, 210, 255), rgb(58, 123, 213));
+    background: -o-linear-gradient(rgb(0, 210, 255), rgb(58, 123, 213));
+    background: linear-gradient(rgb(0, 210, 255), rgb(58, 123, 213));
+    opacity: 0.95;
+    -webkit-transition: all 0.2s ease-in-out 0.4s;
+    -moz-transition: all 0.2s ease-in-out 0.4s;
+    -o-transition: all 0.2s ease-in-out 0.4s;
+    transition: all 0.2s ease-in-out 0.4s;
 }
 
 .menu .profile-pic:hover div {
