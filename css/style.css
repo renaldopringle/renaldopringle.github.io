@@ -219,10 +219,53 @@ article img {
     }
 }
 
+@-webkit-keyframes leftright {
+    from {
+        left: 20%;
+    }
+    to {
+        left: 80%;
+    }
+}
+@-moz-keyframes leftright {
+    from {
+        left: 20%;
+    }
+    to {
+        left: 80%;
+    }
+}
+@-o-keyframes leftright {
+    from {
+        left: 20%;
+    }
+    to {
+        left: 80%;
+    }
+}
+@keyframes leftright {
+    from {
+        left: 20%;
+    }
+    to {
+        left: 80%;
+    }
+}
+
 svg {
     -webkit-animation: fade 1s infinite;
     -moz-animation: fade 1s infinite;
     -o-animation: fade 1s infinite;
     animation: fade 1s infinite;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+}
+
+#drawing {
+    -webkit-animation: leftright .3s infinite;
+    -moz-animation: leftright .3s infinite;
+    -o-animation: leftright .3s infinite;
+    animation: leftright .3s infinite;
 }
 
