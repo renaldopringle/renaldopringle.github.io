@@ -1,6 +1,4 @@
 $(document).ready(function() {
-    var path = window.location.pathname;
-
     $('#menu-toggle').click(function() {
         $('.body').toggleClass('toggle');
     });
@@ -8,27 +6,31 @@ $(document).ready(function() {
     	$('.body').removeClass('toggle');
     });
 
-    if (path == "/") {
-    	$('.links ul li:first-child a').addClass('activepage');
+    try {
+        var path = window.location.pathname;
+        if (path == "/") {
+            $('.links ul li:first-child a').addClass('activepage');
+        }
+        if (path == "/about") {
+            $('.links ul li:nth-child(2) a').addClass('activepage');
+        }
+        if (path == "/projects") {
+            $('.links ul li:nth-child(3) a').addClass('activepage');
+        }
+        console.log(path);
     }
-    /*if (path == "/about") {
-    	$('.links ul li:nth-child(2) a').addClass('activepage');
-    }
-    if (path == "/projects") {
-    	$('.links ul li:nth-child(3) a').addClass('activepage');
-    }*/
+    catch(e) {}
 
     if (SVG.supported) {
-	  var draw = SVG('drawing')
-	  var circle = draw.circle(100, 100)
+	  var draw = SVG('drawing');
+	  var circle = draw.circle(100, 100);
 	} else {
-	  alert('SVG not supported')
+	  alert('SVG not supported');
 	}
 
-	
-    console.log(path);
-
-    var width = window.innerHeight;
-    console.log(width);
-    $('.content').css("min-height: " + width + "px");
+    var height = window.innerHeight;
+    var minheight = height - 165;
+    console.log(height);
+    $('.content').css("min-height", minheight + "px");
+    console.log($('.content').css("min-height"));
 });
