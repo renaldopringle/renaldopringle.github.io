@@ -5,12 +5,17 @@
     <meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/jpeg" href="images/logo.png">
-	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.min.css" />
-	<link rel="stylesheet"  type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="javascript/svg.min.js"></script>
+    <script type="text/javascript" src="javascript/dragdealer.min.js"></script>
+    <link rel="stylesheet"  type="text/css" href="css/style.css">
+    <script type="text/javascript" src="javascript/script.min.js"></script>
 	<title>Welcome to my website!</title>
 </head>
 <body class="body">
-    <header>
+    <header id="main-header">
         <div id="menu-toggle" class="clickable"><img src="images/nav-button.png"></div>
     	<div id="website-title"><a href="/">Renaldo Pringle</a></div>
         <nav class="menu">
@@ -26,29 +31,58 @@
     </header>
     <main>
         <div class="content">
-            <article>
-                <div id="drawing">
+            <article class="mainpage-article">
+                <header class="article-header">
+                    <h2>This is a simple svg animation using svg.js</h2>
+                    <time datetime="2014-06-11T18:52:49+00:00">June 11, 2014</time>
+                </header>
+                <div class="mainpage-articlecontent">
+                    <div id="drawing"></div>
                 </div>
+                <footer class="article-footer"></footer>
             </article>
-            <article>
-            	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <article class="mainpage-article">
+                <header class="article-header">
+                    <h2>Lorem Ipsum</h2>
+                    <time datetime="2014-06-11T18:52:49+00:00">June 11, 2014</time>
+                </header>
+            	<div class="mainpage-articlecontent">
+            	   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <footer class="article-footer"></footer>
             </article>
-            <article>
-            	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <article class="mainpage-article">
+                <header class="article-header">
+                    <h2>Lorem Ipsum</h2>
+                    <time datetime="2014-06-11T18:52:49+00:00">June 11, 2014</time>
+                </header>
+            	<div class="mainpage-articlecontent">
+            	   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <footer class="article-footer"></footer>
             </article>
-            <article>
-            	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <article class="mainpage-article">
+                <header class="article-header">
+                    <h2>Lorem Ipsum</h2>
+                    <time datetime="2014-06-11T18:52:49+00:00">June 11, 2014</time>
+                </header>
+            	<div class="mainpage-articlecontent">
+            	   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <footer class="article-footer"></footer>
             </article>
-            <article>
-            	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <article class="mainpage-article">
+                <header class="article-header">
+                    <h2>Lorem Ipsum</h2>
+                    <time datetime="2014-06-11T18:52:49+00:00">June 11, 2014</time>
+                </header>
+                <div class="mainpage-articlecontent">
+            	   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <footer class="article-footer"></footer>
             </article>
         </div>
     </main>
-    <footer>This is the footer.</footer>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="javascript/svg.min.js"></script>
-    <script type="text/javascript" src="javascript/dragdealer.min.js"></script>
-    <script type="text/javascript" src="javascript/script.min.js"></script>
+    <footer id="main-footer">This is the footer.</footer>
 </body>
 </html>
