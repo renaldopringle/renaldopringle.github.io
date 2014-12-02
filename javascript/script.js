@@ -11,10 +11,10 @@ $(document).ready(function() {
         if (path == "/") {
             $('.links ul li:first-child a').addClass('activepage');
         }
-        if (path == "/about") {
+        if (path == "/about/") {
             $('.links ul li:nth-child(2) a').addClass('activepage');
         }
-        if (path == "/projects") {
+        if (path == "/projects/") {
             $('.links ul li:nth-child(3) a').addClass('activepage');
         }
         console.log(path);
@@ -28,9 +28,12 @@ $(document).ready(function() {
 	  alert('SVG not supported');
 	}
 
-    var height = window.innerHeight;
-    var minheight = height - 165;
-    console.log(height);
-    $('.content').css("min-height", minheight + "px");
-    console.log($('.content').css("min-height"));
+    function stickyfoo() {
+        var height = window.innerHeight;
+        var minheight = height - 165;
+        console.log(height);
+        $('.content').css("min-height", minheight + "px");
+        console.log($('.content').css("min-height"));
+    }
+    stickyfoo();
 });
